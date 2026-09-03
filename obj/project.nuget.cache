@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "JnQCHhihhe4=",
+  "dgSpecHash": "6/KvXLlZGxU=",
   "success": true,
-  "projectFilePath": "D:\\Pedro\\DS1\\RpgApi\\RpgApi.csproj",
+  "projectFilePath": "C:\\Users\\pedro\\Documents\\Etec HAS\\C#\\RpgApi\\RpgApi.csproj",
   "expectedPackageFiles": [
-    "D:\\NugetPackages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
-    "D:\\NugetPackages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
       "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "D:\\Pedro\\DS1\\RpgApi\\RpgApi.csproj",
+      "projectPath": "C:\\Users\\pedro\\Documents\\Etec HAS\\C#\\RpgApi\\RpgApi.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Pedro\\DS1\\RpgApi\\RpgApi.csproj",
+      "filePath": "C:\\Users\\pedro\\Documents\\Etec HAS\\C#\\RpgApi\\RpgApi.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"

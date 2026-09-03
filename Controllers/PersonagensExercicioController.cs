@@ -10,7 +10,7 @@ namespace RpgApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PersonagensExemploController : ControllerBase
+    public class PersonagensExercicioController : ControllerBase
     {
         private static List<Personagem> personagens = new List<Personagem>()
         {
@@ -24,53 +24,31 @@ namespace RpgApi.Controllers
             new Personagem() { Id = 7, Nome = "Radagast", PontosVida=100, Forca=25, Defesa=11, Inteligencia=35, Classe=ClasseEnum.Mago }
         };
 
-        [HttpGet("GetAll")]
-        public IActionResult Get()
+        [HttpGet("GetByNome/{nome}")]
+        public IActionResult GetByNome(string nome)
         {
-            return Ok(personagens);
+            Personagem nomeBusca = personagens.Find(n => n.Nome == nome);
+            if (nomeBusca == null)
+            {
+                return BadRequest("NotFound");
+            }
+            else
+            {
+                   return Ok(nomeBusca);
+            }
+         
         }
 
-        [HttpPost]
-        public IActionResult AddPersonagem(Personagem novoPersonagem)
+        [HttpGet("GetClerigoMago")]
+        public IActionResult GetClerigomago()
         {
-            personagens.Add(novoPersonagem);
-            return Ok(personagens);
-        }
-
-        [HttpPut]
-        public IActionResult Updatepersonagem(Personagem p)
-        {
-            Personagem personagemAlterado = personagens.Find(pers => pers.Id == p.Id);
-            personagemAlterado.Nome = p.Nome;
-            personagemAlterado.PontosVida = p.PontosVida;
-            personagemAlterado.Forca = p.Forca;
-            personagemAlterado.Defesa = p.Defesa;
-            personagemAlterado.Inteligencia = p.Inteligencia;
-            personagemAlterado.Classe = p.Classe;
-
-            return Ok(personagens);
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            personagens.RemoveAll(pers => pers.Id == id);
-
-            return Ok(personagens);
-        }
-
-        [HttpGet("GetByEnum/{enumId}")]
-        public IActionResult GetByEnum(int enumId)
-        {
-            ClasseEnum enumDigitado = (ClasseEnum)enumId;
-
-            List<Personagem> listaBusca = personagens.FindAll(p => p.Classe == enumDigitado);
-
-            return Ok(listaBusca);
+            List<Personagem> buscaMC = personagens.FindAll(c => c.Classe != ClasseEnum.Cavaleiro);
+            
+            return Ok();
         }
 
 
-
+        
 
     }
 }

@@ -42,9 +42,8 @@ namespace RpgApi.Controllers
         [HttpGet("GetClerigoMago")]
         public IActionResult GetClerigomago()
         {
-            List<Personagem> buscaMC = personagens.FindAll(c => c.Classe != ClasseEnum.Cavaleiro);
-            
-            return Ok();
+            List<Personagem> buscaMC = personagens.FindAll(c => c.Classe != ClasseEnum.Cavaleiro).OrderByDescending(p => p.PontosVida).ToList();
+            return Ok(buscaMC);
         }
 
 

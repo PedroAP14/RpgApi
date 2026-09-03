@@ -31,3 +31,37 @@ D:\Pedro\DS1\RpgApi\obj\Debug\net10.0\refint\RpgApi.dll
 D:\Pedro\DS1\RpgApi\obj\Debug\net10.0\RpgApi.pdb
 D:\Pedro\DS1\RpgApi\obj\Debug\net10.0\RpgApi.genruntimeconfig.cache
 D:\Pedro\DS1\RpgApi\obj\Debug\net10.0\ref\RpgApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\appsettings.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.staticwebassets.endpoints.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.exe
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.deps.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.runtimeconfig.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\RpgApi.pdb
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.csproj.AssemblyReference.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.AssemblyInfoInputs.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.AssemblyInfo.cs
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.sourcelink.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\scopedcss\bundle\RpgApi.styles.css
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.csproj.Up2Date
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\refint\RpgApi.dll
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.pdb
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\RpgApi.genruntimeconfig.cache
+C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\obj\Debug\net10.0\ref\RpgApi.dll

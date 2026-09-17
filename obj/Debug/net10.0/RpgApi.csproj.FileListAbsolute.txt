@@ -198,3 +198,9 @@ D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm6
 D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 D:\Pedro\DS1\RpgApi\obj\Debug\net10.0\RpgApi.sourcelink.json
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\web.config
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\appsettings.Development.json
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\appsettings.json
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\RpgApi.deps.json
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\RpgApi.runtimeconfig.json
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\publish\RpgApi.staticwebassets.endpoints.json

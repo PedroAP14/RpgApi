@@ -336,9 +336,3 @@ C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\osx-x64\n
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\web.config
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\appsettings.Development.json
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\appsettings.json
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\RpgApi.deps.json
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\RpgApi.runtimeconfig.json
-C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\publish\RpgApi.staticwebassets.endpoints.json

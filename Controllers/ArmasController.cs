@@ -24,7 +24,7 @@ namespace RpgApi.Controllers
         {
             try
             {
-                List<arma> lista = await _context.TB_ARMAS.ToListAsync();
+                List<Arma> lista = await _context.TB_ARMAS.ToListAsync();
                 return Ok(lista);
             }
             catch (System.Exception ex)
@@ -38,7 +38,7 @@ namespace RpgApi.Controllers
         {
             try
             {
-                arma a = await _context.TB_ARMAS.FirstOrDefaultAsync(aBusca => aBusca.Id == id);
+                Arma a = await _context.TB_ARMAS.FirstOrDefaultAsync(aBusca => aBusca.Id == id);
 
                 return Ok(a);
             }
@@ -49,7 +49,7 @@ namespace RpgApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(arma novaArma)
+        public async Task<IActionResult> Add(Arma novaArma)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace RpgApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(arma novaArma)
+        public async Task<IActionResult> Update(Arma novaArma)
         {
             try
             {
@@ -85,7 +85,7 @@ namespace RpgApi.Controllers
         {
             try
             {
-                arma aRemover = await _context.TB_ARMAS.FirstOrDefaultAsync(a => a.Id == id);
+                Arma aRemover = await _context.TB_ARMAS.FirstOrDefaultAsync(a => a.Id == id);
                 _context.TB_ARMAS.Remove(aRemover);
                 int linhasAfetadas = await _context.SaveChangesAsync();
                 return Ok(linhasAfetadas);

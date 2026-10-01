@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using RpgApi.Models;
 using RpgApi.Models.Enuns;
 using RpgApi.Utils;
@@ -19,13 +20,13 @@ namespace RpgApi.Data
         }
 
         public DbSet<Personagem> TB_PERSONAGENS { get; set; }
-        public DbSet<arma> TB_ARMAS { get; set; }
+        public DbSet<Arma> TB_ARMAS { get; set; }
         public DbSet<Usuario> TB_USUARIOS { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Personagem>().ToTable("TB_PERSONAGENS");
-            modelBuilder.Entity<arma>().ToTable("TB_ARMAS");
+            modelBuilder.Entity<Arma>().ToTable("TB_ARMAS");
             modelBuilder.Entity<Usuario>().ToTable("TB_USUARIOS");
 
             //Relacionamento One to Many (Um para Muitos)
@@ -46,20 +47,35 @@ namespace RpgApi.Data
                 new Personagem() { Id = 7, Nome = "Radagast", PontosVida = 100, Forca = 25, Defesa = 11, Inteligencia = 35, Classe = ClasseEnum.Mago, UsuarioId = 1 }
             );
 
-            modelBuilder.Entity<arma>().HasData
+            modelBuilder.Entity<Arma>().HasData
             (
-                new arma() {Id = 1, Nome = "Espada", Dano = 15},
-                new arma() {Id = 2, Nome = "Arco", Dano = 10},
-                new arma() {Id = 3, Nome = "Machado", Dano = 20},
-                new arma() {Id = 4, Nome = "Martelo", Dano = 25},
-                new arma() {Id = 5, Nome = "Cajado", Dano = 5},
-                new arma() {Id = 6, Nome = "Lança", Dano = 15},
-                new arma() {Id = 7, Nome = "Katana", Dano = 30}
+                new Arma() {Id = 1, Nome = "Espada", Dano = 15},
+                new Arma() {Id = 2, Nome = "Arco", Dano = 10},
+                new Arma() {Id = 3, Nome = "Machado", Dano = 20},
+                new Arma() {Id = 4, Nome = "Martelo", Dano = 25},
+                new Arma() {Id = 5, Nome = "Cajado", Dano = 5},
+                new Arma() {Id = 6, Nome = "Lança", Dano = 15},
+                new Arma() {Id = 7, Nome = "Katana", Dano = 30}
             );
 
             //Criação usuario padrão
             Usuario user = new Usuario();
             Criptografia.CriarPasswordHash("123456", out byte[] hash, out byte[]salt);
+            user.Id = 1;
+            user.Username = "UsuarioAdmin";
+            user.PasswordString = string.Empty;
+            user.PasswordHash = hash;
+            user.PasswordSalt = salt;
+            user.Perfil = "Admin";
+            user.Email = "email@gmail.com";
+            user.Longitude = -23.5200241;
+            user.Latitude = -46.596498;
+
+            modelBuilder.Entity<Usuario>().HasData(user);
+            //Fim da criação
+
+            //Define que o Perfil padrão é jogador, quando não informado
+            modelBuilder.Entity<Usuario>().Property(u => u.Perfil).HasDefaultValue("Jogador");
 
         }
 
@@ -68,6 +84,11 @@ namespace RpgApi.Data
             configurationBuilder.Properties<string>().HaveColumnType("varchar").HaveMaxLength(200);
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.ConfigureWarnings(
+                warnings => warnings .Ignore(RelationalEventId.PendingModelChangesWarning));
+        }
         
 
             

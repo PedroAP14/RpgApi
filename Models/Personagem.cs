@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using RpgApi.Models.Enuns;
 
@@ -17,7 +18,15 @@ namespace RpgApi.Models
         public ClasseEnum Classe { get; set; }
 
         public int? UsuarioId { get; set; }
-        public Usuario? Usuario { get; set; }
         public byte[]? FotoPersonagem { get; set; }
+
+        [JsonIgnore]
+        public Usuario? Usuario { get; set; }
+
+        [JsonIgnore]
+        public Arma? Arma { get; set; }
+        public int Disputas { get; set; }
+        public int Vitorias { get; set; }
+        public int Derrotas { get; set; }
     }
 }

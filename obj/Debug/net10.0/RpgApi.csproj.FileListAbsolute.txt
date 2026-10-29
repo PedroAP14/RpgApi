@@ -336,3 +336,6 @@ C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\osx-x64\n
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 C:\Users\pedro\Documents\Etec HAS\C#\RpgApi\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Pedro\DS1\RpgApi\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
